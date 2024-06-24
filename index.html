@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    /* font */
+    .figtree-title {
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    .figtree-small {
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    .figtree-published {
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .figtree-text {
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 1.5rem;
+      color: rgb(147, 149, 151);
+    }
+
+    .figtree-user {
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    main {
+      background-color: hsl(47, 88%, 63%);
+      display: grid;
+      height: 100vh;
+      place-content: center;
+      width: 100%;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 1.2rem;
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: auto;
+      height: 500px;
+      padding: 1.3rem;
+      min-width: 220px;
+      max-width: 320px;
+      /* box shadow */
+      /* -webkit-box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.95);
+      -moz-box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.95);
+      box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.95); */
+      box-shadow: 9px 10px 0px 4px;
+
+    }
+
+    img {
+      border-radius: 10px;
+    }
+
+    .img-user {
+      width: 40px;
+      height: 40px;
+      object-fit: fill;
+      border: 1px solid;
+      border-radius: 50%;
+    }
+
+    small {
+      background-color: hsl(47, 88%, 63%);
+      width: 3.5rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    .content-info-user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <main role="content-card">
+    <div role="card-content" class="card">
+      <img src="assets/images/illustration-article.svg" alt="images card">
+      <small role="learning" class="figtree-small">Learning</small>
+      <span class="figtree-published">Published 21 Dec 2023</span>
+      <h2 role="title" class="figtree-title">HTML & CSS foundations</h2>
+      <p role="description" class="figtree-text">These languages are the backbone of every website, defining structure, content, and
+        presentation.</p>
+      <div role="content-data-user" class="content-info-user">
+        <img class="img-user" src="assets/images/image-avatar.webp" alt="photo user">
+        <span role="user-name" class="figtree-user">Greg Hooper</span>
+      </div>
+    </div>
+    <div role="footer" class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">djdeveloper22</a>.
+    </div>
+  </main>
+</body>
+</html>
